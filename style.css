@@ -8,6 +8,13 @@ body {
     margin: 0;
     background: #f0a3ea;
   }
+  h1{
+    font-family: "shlop", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 300px;
+    text-shadow: 0px 7px 9px #aecaf5;
+  }
   
   #container {
     width: 400px;
