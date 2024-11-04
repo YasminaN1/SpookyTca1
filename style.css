@@ -1,7 +1,7 @@
 body{
     overflow:hidden;
-    height:100vh;
-    width:100vw;
+    height:100vh; /* viewport height*/
+    width:100vw; /** viewport width*/
     display: flex;
     justify-content: center;
     align-items:center;
@@ -49,9 +49,9 @@ body{
     height:36px;
     border-radius: 50%;
     background:#d2f2ec;
-    animation:floaty .2s infinte;
+    animation:floaty .3s infinte;
 }
-
+/*arms*/
 #spooky #body:before{
     left:-18px;
 }
@@ -59,6 +59,7 @@ body{
 #spooky #body:after{
     right:-18px;  
 }
+/*arms*/
 
 #spooky #body #eyes{
     display: flex;
@@ -91,7 +92,7 @@ body{
 #spooky #body #mouth:before {
     content: ' ';
     display: block;
-    background: #fff;
+    background: #ffffff;
     margin-left: 20px;
     width:10px;
     height:10px;
@@ -121,7 +122,7 @@ background: #230a2d;
 width: 180px;
 height:40px;
 border-radius: 50%;
-animation: zoomy 2s infinite;
+animation: zoomy 3s infinite;
 }
 
 @keyframes floaty {
@@ -130,16 +131,16 @@ animation: zoomy 2s infinite;
     }
 
     50%{
-        transform: translateY(-20px);
+        transform: translateY(-40px);
     }
 }
 
 @keyframes zoomy {
     0%, 100%{
-        transform: scale(1);
+        transform: scale(1.4);
     }
 
     50%{
-        transform:scale(0.8);
+        transform:scale(0.9);
     }
 }
